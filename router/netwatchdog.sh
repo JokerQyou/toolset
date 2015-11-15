@@ -3,11 +3,12 @@
 DATE=`date +%Y-%m-%d-%H:%M:%S`
 tries=0
 sleepinterval=5
+timeout=2
 
 echo netwatchdog start
 while [[ $tries -lt 5 ]]
 do
-    if /bin/ping -c 1 baidu.com >/dev/null
+    if /bin/ping -c 1 -W $timeout baidu.com >/dev/null
     then
         echo network ok, quit
         exit 0
