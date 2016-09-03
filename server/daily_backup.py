@@ -55,7 +55,7 @@ def push_notification(s):
     Push a notification via Telegram bot
     '''
     http_post(
-        'https://eth-nookcloud.rhcloud.com/bot/push',
+        'https://eth.api.mynook.info/push',
         data={
             'code': PUSH_CODE,
             'text': s,
