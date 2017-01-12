@@ -24,7 +24,7 @@ _log_handler = logging.StreamHandler()
 _log_handler.setFormatter(
     logging.Formatter('%(name)s [%(levelname)s]: %(message)s')
 )
-log.addHandler(logging.StreamHandler())
+log.addHandler(_log_handler)
 debug = True  # FIXME
 
 HOSTNAME = hostname().strip()
