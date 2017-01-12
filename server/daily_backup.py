@@ -223,7 +223,7 @@ def main():
     The main program workflow:
     1. load configuration file;
     2. (if enabled) dump MySQL / MariaDB databases;
-    3. (if necessary) create new borg archive (results of step 2 will be included);
+    3. (if necessary) create borg archive (results of step 2 will be included);
     4. (if configured) sync borg repo to cloud storage using rclone;
     5. (if configured) send a notification via Telegram bot @eth0_bot;
 
