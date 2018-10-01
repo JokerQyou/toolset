@@ -1,0 +1,12 @@
+.tab .tab-header {
+  padding: var(--padding) !important;
+}
+.tab .close {
+  order: 1 !important;
+}
+.tab .tab-audio {
+  order: -1 !important;
+}
+.tab .favicon {
+  display: inline !important;
+}
